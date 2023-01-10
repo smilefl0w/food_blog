@@ -1,0 +1,116 @@
+/*GENERAL-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Pattaya&display=swap');
+/*font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Pattaya', sans-serif;
+*/
+
+:root {
+    --main-font:'Annie Use Your Telescope', cursive;
+
+    --bg-body:#de9f79;
+    --bg-card:#e8e0c3;
+
+    --title-color:#7d251f;
+    --primary-text-color:#8e2b02;
+    --secondary-text-color:#503118;
+    --tert-text-color:#988466;
+
+    --btn-primary-color: #ec9302;
+}
+
+
+body {
+font-family:'Annie Use Your Telescope', cursive, sans-serif;
+    background-color: var(--bg-body);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+p {
+    font-size: 20px;
+    padding: 15px;
+    color: var(--tert-text-color);
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    color: var(--primary-text-color);
+    font-size: 3rem;
+    margin: 20px 0 0 0;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 15px;
+    line-height: 0.5;
+    color: var(--secondary-text-color);
+
+}
+
+h2 {
+    font-size: 3rem;
+    
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*MAIN-SECTION--------------------------------*/
+/*NAVBAR--------------------------------*/
+
+.navbar .flex {
+    flex-direction: column;
+    overflow: visible;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0 0 10px 0;
+    z-index: 1;
+    margin: 0;
+}
+
+.navbar a {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px var(--secondary-text-color) solid;
+}
+
+
+/*CONTENT--------------------------------*/
+.content .container {
+    padding: 0;
+}
+
+.content .btn {
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.content .dotted-line {
+    border: none;
+    border-top: 5px dotted var(--tert-text-color);
+    background-color:none;
+    width: 25%;
+    /*top right bottom left*/
+    margin: 40px 0 100px 15px ;
+}

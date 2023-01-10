@@ -1,0 +1,156 @@
+
+/*GENERAL-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Pattaya&display=swap');
+/*font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Pattaya', sans-serif;
+*/
+
+
+:root {
+    --bg-primary:#de9f79 ;
+    --bg-secondary:#e8e0c3;
+
+    --title-color:#7d251f;
+    --primary-text-color:#8e2b02;
+    --secondary-text-color:#503118;
+    --tert-text-color:#988466;
+
+    --btn-primary-color: #ec9302;
+}
+
+* {
+    /*Sets something for ALL elements like it imports all elements from a python file*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Annie Use Your Telescope', cursive, sans-serif;
+    background-color: var(--bg-primary);
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    /*makes sure there are no bulletpoints in a list*/
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin: 10px 0;  
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/*MAIN-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.main {
+    max-width: 1024px;
+    max-height:1024px;
+    background-color: var(--bg-secondary);
+    margin:38px auto;
+    /*top, right, bottom, left*/
+    padding: 20px 0px 20px 0;
+}
+
+
+
+/*NAVBAR-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.navbar {
+    overflow: visible;
+}
+
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 21px;
+}
+
+.navbar .btn {
+    padding: 0 10px;
+    /*top, right, bottom, left*/ 
+    margin: 0px 5px 0px 20px;
+    font-size: 21px;
+}
+
+.brand-title {
+    font-family: 'Pattaya', sans-serif;
+    color: var(--primary-text-color)
+}
+
+/*CONTENT-SECTION-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.content-section {
+    position: relative;
+}
+
+.content-section .card {
+    padding: 0px 20px;
+}
+
+.content-section .grid {
+    /*left item and right item in the grid-container thats IN showcase*/
+    grid-template-columns: 60% 40%;
+    overflow: visible;
+    gap: 0;
+    /*top, right, bottom, left*/
+    padding: 0 40px 40px 0;
+}
+
+.content-section img {
+    max-height: 750px;
+}
+
+.content-section .content-text {
+    position:relative;
+    
+    
+}
+
+.content-text h2 {
+    font-size: 4rem;
+    padding: 0;
+    color: var(--primary-text-color);
+    margin: 0;
+
+}
+
+.content-text .subtitle {
+    font-size:2rem;
+    color: var(--secondary-text-color);
+}
+
+.content-section .btn {
+    border-radius: 25px;
+    padding: 5px 30px;
+    /*top, right, bottom, left*/ 
+    margin: 10px 5px 0px 0px;
+    font-size: 21px;
+
+}
+
+
+/*MEDIA QUERIES-------------------------------------------------------------------------------------------------------------------------------------------------------------*/

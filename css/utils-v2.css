@@ -1,0 +1,41 @@
+
+/*top, right, bottom, left*/ 
+
+.container {
+    /*margin: 0 (sets it in the middle) */    
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding:0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height 100% makes something always take up 100% of its container*/
+    height: 100%;
+}
+
+.card {
+    background-color: var(--bg-card);
+    max-width: 1060px;
+    margin: auto;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--btn-primary-color);
+    color: var(--secondary-text-color);
+    font-family: var(--main-font);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
