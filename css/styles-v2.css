@@ -104,6 +104,12 @@ img {
 .content .btn {
     margin: 15px;
     border-radius: 25px;
+    
+}
+
+.container .btn-container {
+    justify-content: center;
+    text-align: center;
 }
 
 .content .dotted-line {
@@ -113,4 +119,41 @@ img {
     width: 25%;
     /*top right bottom left*/
     margin: 40px 0 100px 15px ;
+}
+
+/*REVIEWS--------------------------------*/
+
+.reviews .container {
+    padding: 15px;
+}
+
+.reviews h3 {
+    line-height: 1;
+}
+
+.reviews h2 {
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*MEDIA QUERIES--------------------------------*/
+
+@media (max-width:480px) {
+    .container .flex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+       }
+ }
+@media (max-width: 768px) {
+   .card-2 {
+    max-width: 250px;
+    min-height: 120px;
+   }
+
+   .container .flex {
+    flex-direction: row;
+   }
 }

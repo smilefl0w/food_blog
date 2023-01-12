@@ -23,6 +23,17 @@
     margin: auto;
 }
 
+.card-2 {
+    background-color: white;
+    color:var(--secondary-text-color);
+    border-radius: 10px;
+    /*horizontal, vertical, blurr, color -- 0.2 = transparency in rgba*/
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin:10px;
+    max-width: 300px;
+
+}
 
 .btn {
     display: inline-block;
@@ -38,4 +49,22 @@
 
 .btn:hover {
     transform: scale(0.98);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
